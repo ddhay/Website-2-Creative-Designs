@@ -137,6 +137,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+
 }
 
 .customers-wrapper {
@@ -364,7 +365,7 @@ html {
   justify-content: space-evenly;
   box-shadow: 0.3rem 0.3rem 0.4rem #ccc, -0.1rem -0.1rem 0.4rem #ccc;
   border-radius: 0.5rem;
-  perspective: 100rem;
+  perspective: 100rem; /*3D how for away from element*/
 }
 
 .form-img {
@@ -381,7 +382,7 @@ html {
 .form-img:hover {
   transform: translateY(-2rem) rotateY(20deg);
   box-shadow: -5rem 5rem 7rem #aaa;
-}
+}/*move element up on hover*/
 
 .contact-form {
   width: 45rem;
@@ -408,7 +409,8 @@ html {
   letter-spacing: 0.1rem;
   border: none;
   border-radius: 2rem;
-  box-shadow: inset 0.1rem 0.1rem 0.2rem #ddd, inset -0.1rem -0.1rem 0.2rem #ddd;
+  box-shadow: inset 0.1rem 0.1rem 0.2rem #ddd, 
+  inset -0.1rem -0.1rem 0.2rem #ddd;
 }
 
 .contact-form textarea {
@@ -418,14 +420,7 @@ html {
   min-width: 70%;
 }
 
-.contact-form input[type="submit"] {
-  background-color: rgba(50, 231, 255, 0.8);
-  color: #fff;
-  font-weight: bolder;
-  letter-spacing: 0.5rem;
-  cursor: pointer;
-  transition: background-color 0.5s;
-}
+
 
 .contact-form input[type="submit"]:hover {
   background-color: #32e7ff;
